@@ -111,3 +111,19 @@ footer {
     }
 
   }
+
+  .Tech{
+      border: solid 2px black;
+      border-radius: 5px;
+      padding: 5px;
+      height: 100;
+      display: block;
+  }
+  .img{
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+  }
+  .Tech p{
+      margin: 0;
+  }
