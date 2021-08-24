@@ -133,3 +133,16 @@ footer {
       width: 40px;
       float: right;
   }
+
+  th{
+      border: solid 1px black;
+      
+      
+      
+      
+  }
+  td{
+      border: solid 1px black;
+   
+
+  }

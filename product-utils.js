@@ -9,7 +9,6 @@ export function techno(technology) {
     const myDiv = document.createElement('div');
     const myParagraph = document.createElement('p');
 
-
     myLi.classList.add('tech');
     myButton.classList.add('button');
     myImage.classList.add('img');

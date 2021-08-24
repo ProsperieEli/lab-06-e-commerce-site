@@ -1,4 +1,4 @@
-export const scienceReality= [
+export const scienceReality = [
     {
         id: 12,
         name: 'liquid metal',
