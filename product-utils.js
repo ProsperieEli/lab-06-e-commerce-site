@@ -1,7 +1,7 @@
 import { scienceReality } from "./science.js";
 
 
-export default function techno(technology) {
+export function techno(technology) {
     const myLi = document.createElement('li');
     const myButton = document.createElement('button');
     const myImage = document.createElement('img');
@@ -17,10 +17,12 @@ export default function techno(technology) {
     myDiv.classList.add('Information');
     myParagraph.classList.add('price');
 
-    myImage.src = technology.image;
+    myImage.src = `../assets/${technology.image}`;
     myHeader.textContent = technology.name;
-    myDiv.textContent = `${technology.name}, safe to touch.`;
-    myParagraph.textContent = 
+    myDiv.textContent = `${technology.description}`;
+    myParagraph.textContent = `$${technology.price}`;
+    myButton.textContent = 'Add';
+    
 
 
 
