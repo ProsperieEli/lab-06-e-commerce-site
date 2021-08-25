@@ -1,7 +1,6 @@
 import { cart } from "./data-cart.js";
 import { scienceReality } from "../science.js";
 import { renderTableRow } from "../utils.js";
-import { calcItemTotal } from "../utils.js";
 import { entireOrderTotal } from "../utils.js";
 
 // export function cartList(items) {
@@ -22,7 +21,13 @@ for (let tech of cart) {
 
 const total = entireOrderTotal(scienceReality, cart);
 
-calcItemTotal.textContent = total;
-//     myTr.append(myItem, myPrice, myQuantity, myTotal, myButton);
-//     return myTr;
-// }
+
+//Include injection space here--
+
+const td = document.querySelector('#final');
+//Arguments of entireOrderTotal are the real passing arguments
+
+td.textContent = total;
+// calcItemTotal.textContent = total;
+
+ 
