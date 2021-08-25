@@ -1,5 +1,11 @@
 import { scienceReality } from "./science.js";
 
+
+
+export function calcItemTotal(quantity, price) {
+    const getTotal = price * quantity;
+    return getTotal;
+}
 export function findById(scienceReality ,id) {
 
     for (let tech of scienceReality) {
@@ -25,33 +31,31 @@ export function renderTableRow(yourCart) {
     quantityEl.classList.add('cQuantity');
     totalEl.classList.add('cTotal');
    
-    console.log(yourCart);
+    
 
     const tec = findById(scienceReality, yourCart.id);
-
-    tr.textContent = tec.name;
+    
+    itemsEl.textContent = tec.name;
     priceEl.textContent = tec.price;
     quantityEl.textContent = yourCart.quantity;
 
-    const total = fullAmount(tec.price, yourCart.quantity);
 
-    totalcPrice.textContent = total.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    
+    const total = calcItemTotal(yourCart.quantity, tec.price);
+    
+    totalEl.textContent = total.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
     tr.append(itemsEl, priceEl, quantityEl, totalEl);
 
     return tr;
 
 }
 
-export function calcItemTotal(quantity, price) {
-    const getTotal = price * quantity;
-    return getTotal;
-}
 
 export function entireOrderTotal(allProducts, cart){
     let accumulator = 0;
 
     for (let tec of cart) {
-        const item = findById(allProducts, item.id);
+        const item = findById(allProducts, tec.id);
         const total = item.price * item.quantity;
 
         accumulator = accumulator + total;
