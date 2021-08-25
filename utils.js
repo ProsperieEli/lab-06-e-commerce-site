@@ -1,19 +1,11 @@
 import { scienceReality } from "./science.js";
 
 
-// export function calcItemTotal(yourCart.quantity, tec.price);
-    
-// totalEl.textContent = total.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
-
-// tr.append(itemsEl, priceEl, quantityEl, totalEl);
-
-// return tr;
-
 export function calcItemTotal(quantity, price) {
     const getTotal = price * quantity;
     return getTotal;
 }
-export function findById(scienceReality ,id) {
+export function findById(scienceReality, id) {
 
     for (let tech of scienceReality) {
         if (tech.id === id) {
