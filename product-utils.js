@@ -1,5 +1,4 @@
-import { scienceReality } from "./science.js";
-
+import { addItemToCart } from "./interactive-io.js";
 
 export function techno(technology) {
     const myLi = document.createElement('li');
@@ -8,6 +7,13 @@ export function techno(technology) {
     const myHeader = document.createElement('h3');
     const myDiv = document.createElement('div');
     const myParagraph = document.createElement('p');
+
+    myButton.addEventListener('click', () => {
+        alert('Awesome! Added to your cart!');
+
+        addItemToCart(technology.id);
+
+    });
 
     myLi.classList.add('tech');
     myButton.classList.add('button');
