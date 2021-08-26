@@ -1,4 +1,4 @@
-
+       
 body {
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
     /* --color1: hsla(349, 69%, 76%, 1);
@@ -9,9 +9,9 @@ body {
 
     --color1: rgb(231, 230, 227);
     --color2: rgb(89, 82, 100);
-    --color3: rgb(99, 90, 96);
-    --color4: rgb(47, 147, 172);
-    --color5: rgb(4, 13, 41); 
+    --color3: rgb(181, 178, 221);
+    --color4: rgb(144, 170, 97);
+    --color5: rgb(165, 171, 189); 
     
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
@@ -20,6 +20,7 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    background-image: url('https://motionarray.imgix.net/preview-190851-eqSfS9x5OI-high_0002.jpg');
 }
 
 main {
@@ -145,4 +146,25 @@ footer {
       border: solid 1px black;
    
 
+  }
+  h1, h4{
+      font-size: 50px;
+      font-family: 'Arkhip' ;
+  }
+  a{
+    font-size: 50px;
+    color: black;
+    font-family: 'Arkhip';
+    border: 10px;
+  }
+  li{
+      background-color: silver;
+  }
+  .tech{
+      font-size: 20px;
+  }
+
+  .cHead, #final{
+      font-size: 50px;
+      background-color: silver;
   }

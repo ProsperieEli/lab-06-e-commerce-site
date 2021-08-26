@@ -1,5 +1,6 @@
 import { addItemToCart } from "./interactive-io.js";
 
+
 export function techno(technology) {
     const myLi = document.createElement('li');
     const myButton = document.createElement('button');
@@ -9,7 +10,7 @@ export function techno(technology) {
     const myParagraph = document.createElement('p');
 
     myButton.addEventListener('click', () => {
-        alert('Awesome! Added to your cart!');
+        alert(`Awesome! ${technology.name} is added to your cart! The total was: $${technology.price}.`);
 
         addItemToCart(technology.id);
 
